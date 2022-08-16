@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "62f8101094c5d65d455cdba6"
+  },
+  "name": "Mediterranean Diving Center",
+  "address": "Candia Pasrk",
+  "phone": "23132123",
+  "imagePath": "images01.jpg"
+},{
+  "_id": {
+    "$oid": "62f94ccc94c5d65d455d0d71"
+  },
+  "name": "SEANSHINE SCUBA",
+  "address": "Florida",
+  "phone": "1234568",
+  "imagePath": "images02.jpg"
+},{
+  "_id": {
+    "$oid": "62f94cd894c5d65d455d0d78"
+  },
+  "name": "RAID",
+  "address": "Crete, Greece",
+  "phone": "1276533",
+  "imagePath": "images03.jpg"
+},{
+  "_id": {
+    "$oid": "62f94ce194c5d65d455d0d7e"
+  },
+  "name": "Naui just dive",
+  "address": "Hawai",
+  "phone": "225788",
+  "imagePath": "images04.jpg"
+}]

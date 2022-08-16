@@ -1,0 +1,77 @@
+[{
+  "_id": {
+    "$oid": "62f9189a74a9dcee53fe51b5"
+  },
+  "userID": {
+    "$oid": "62f800fa94c5d65d455cd77a"
+  },
+  "organizationID": {
+    "$oid": "62f8101094c5d65d455cdba6"
+  },
+  "date": {
+    "$date": {
+      "$numberLong": "1637406345000"
+    }
+  },
+  "programID": {
+    "$oid": "62f8112094c5d65d455cdc06"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62fabfced7cc96568a624a0f"
+  },
+  "userID": {
+    "$oid": "62f800fa94c5d65d455cd77a"
+  },
+  "organizationID": {
+    "$oid": "62f8101094c5d65d455cdba6"
+  },
+  "date": {
+    "$date": {
+      "$numberLong": "1659484800000"
+    }
+  },
+  "programID": {
+    "$oid": "62fabec094c5d65d455d3614"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62fac01fd7cc96568a624a27"
+  },
+  "userID": {
+    "$oid": "62fac000d7cc96568a624a17"
+  },
+  "organizationID": {
+    "$oid": "62f8101094c5d65d455cdba6"
+  },
+  "date": {
+    "$date": {
+      "$numberLong": "1660600347248"
+    }
+  },
+  "programID": {
+    "$oid": "62fabec094c5d65d455d3614"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "62fac047d7cc96568a624a2b"
+  },
+  "userID": {
+    "$oid": "62fac000d7cc96568a624a17"
+  },
+  "organizationID": {
+    "$oid": "62f8101094c5d65d455cdba6"
+  },
+  "date": {
+    "$date": {
+      "$numberLong": "1660867200000"
+    }
+  },
+  "programID": {
+    "$oid": "62fabec094c5d65d455d3614"
+  },
+  "__v": 0
+}]

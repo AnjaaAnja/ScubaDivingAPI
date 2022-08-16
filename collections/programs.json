@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "62f8112094c5d65d455cdc06"
+  },
+  "withBuddy": true,
+  "withCage": true,
+  "withAnimals": true,
+  "organizationID": {
+    "$oid": "62f8101094c5d65d455cdba6"
+  },
+  "name": "Program with buddy"
+},{
+  "_id": {
+    "$oid": "62fabec094c5d65d455d3614"
+  },
+  "withBuddy": true,
+  "withCage": true,
+  "withAnimals": true,
+  "organizationID": {
+    "$oid": "62f8101094c5d65d455cdba6"
+  },
+  "name": "Program with cage"
+},{
+  "_id": {
+    "$oid": "62fac1cd94c5d65d455d37c7"
+  },
+  "withBuddy": true,
+  "withCage": true,
+  "withAnimals": true,
+  "organizationID": {
+    "$oid": "62f94ccc94c5d65d455d0d71"
+  },
+  "name": "Program with animals"
+},{
+  "_id": {
+    "$oid": "62fac20194c5d65d455d37f1"
+  },
+  "withBuddy": true,
+  "withCage": true,
+  "withAnimals": true,
+  "organizationID": {
+    "$oid": "62f94cd894c5d65d455d0d78"
+  },
+  "name": "Program name 4"
+},{
+  "_id": {
+    "$oid": "62fac21e94c5d65d455d380d"
+  },
+  "withBuddy": true,
+  "withCage": true,
+  "withAnimals": true,
+  "organizationID": {
+    "$oid": "62f94ce194c5d65d455d0d7e"
+  },
+  "name": "Program with cage and animals"
+}]
