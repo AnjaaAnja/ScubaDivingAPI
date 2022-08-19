@@ -1,7 +1,7 @@
 import express, { Application, Request, response, Response, Router } from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
-import mongoose, { Connection, FilterQuery } from 'mongoose'
+import mongoose, { ConnectOptions } from 'mongoose'
 import { request } from 'http';
 import users from './model/user';
 import organizations from './model/organization';
@@ -29,20 +29,26 @@ app.use((req, res, next) => {
     }
     next()
   });
+
 // PARSIRANJE HTTP PAKETA U JSON FORMATU
 app.use(bodyParser.json());
 
 
-// KONEKTOVANJE NA BAZU
-mongoose.connect("mongodb+srv://Anja:MongoDBAnja@cluster0.cspbh.mongodb.net/?retryWrites=true&w=majority");
+const MONGODB_URI="mongodb+srv://Anja:MongoDBAnja@cluster0.cspbh.mongodb.net/?retryWrites=true&w=majority";
 
-const conn: Connection = mongoose.connection;
+// KONEKTOVANJE NA BAZU
+mongoose.connect(MONGODB_URI as string, {
+    useNewUrlParser: true,
+    useUnifiedTopology:true,
+}as ConnectOptions).then(()=>{
+    console.log("Connected to db");
+});
+
+
 const router: Router = express.Router();
 
 
-conn.once('open', () => {
-    console.log('Succesfully conected to database');
-});
+
 
 
 router.route('/login').post((request, response) => {
