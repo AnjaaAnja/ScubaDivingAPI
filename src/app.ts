@@ -36,6 +36,7 @@ app.use(bodyParser.json());
 
 const MONGODB_URI="mongodb+srv://Anja:MongoDBAnja@cluster0.cspbh.mongodb.net/ScubaDiving";
 
+
 // KONEKTOVANJE NA BAZU
 mongoose.connect(MONGODB_URI as string, {
     useNewUrlParser: true,
