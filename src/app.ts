@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 
-const MONGODB_URI="mongodb://Anja:MongoDBAnja@cluster0-shard-00-00.cspbh.mongodb.net:27017,cluster0-shard-00-01.cspbh.mongodb.net:27017,cluster0-shard-00-02.cspbh.mongodb.net:27017/?ssl=true&replicaSet=atlas-sjiof8-shard-0&authSource=admin&retryWrites=true&w=majority";
+const MONGODB_URI="mongodb+srv://Anja:MongoDBAnja@cluster0.cspbh.mongodb.net/ScubaDiving";
 
 // KONEKTOVANJE NA BAZU
 mongoose.connect(MONGODB_URI as string, {
