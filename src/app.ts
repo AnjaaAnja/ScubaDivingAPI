@@ -34,7 +34,7 @@ app.use((req, res, next) => {
 app.use(bodyParser.json());
 
 
-const MONGODB_URI="mongodb+srv://Anja:MongoDBAnja@cluster0.cspbh.mongodb.net/?retryWrites=true&w=majority";
+const MONGODB_URI="mongodb+srv://Anja:MongoDBAnja@cluster0.cspbh.mongodb.net/ScubaDiving";
 
 // KONEKTOVANJE NA BAZU
 mongoose.connect(MONGODB_URI as string, {
@@ -215,5 +215,5 @@ router.route('/addReservation').post((request, response) => {
 });
 
 app.use('/', router);
-app.listen(5000, () => console.log('Server running'))
+app.listen(process.env.PORT || 5000, () => console.log('Server running'))
 
