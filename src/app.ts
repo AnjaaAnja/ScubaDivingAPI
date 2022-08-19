@@ -13,14 +13,28 @@ const app: Application = express();
 
 
 // CORS
-app.use(cors());
-
+//app.use(cors());
+app.use((req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header(
+      "Access-Control-Allow-Headers",
+      "Origin, X-Requested, Content-Type, Accept Authorization"
+    )
+    if (req.method === "OPTIONS") {
+      res.header(
+        "Access-Control-Allow-Methods",
+        "POST, PUT, PATCH, GET, DELETE"
+      )
+      return res.status(200).json({})
+    }
+    next()
+  });
 // PARSIRANJE HTTP PAKETA U JSON FORMATU
 app.use(bodyParser.json());
 
 
 // KONEKTOVANJE NA BAZU
-mongoose.connect("mongodb://localhost:27017/ScubaDiving");
+mongoose.connect("mongodb+srv://Anja:MongoDBAnja@cluster0.cspbh.mongodb.net/?retryWrites=true&w=majority");
 
 const conn: Connection = mongoose.connection;
 const router: Router = express.Router();
